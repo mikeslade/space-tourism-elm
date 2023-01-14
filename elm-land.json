@@ -1,0 +1,41 @@
+{
+  "app": {
+    "elm": {
+      "development": { "debugger": true },
+      "production": { "debugger": false }
+    },
+    "env": [],
+    "html": {
+      "attributes": {
+        "html": { "lang": "en" },
+        "head": {}
+      },
+      "title": "Elm Land",
+      "meta": [
+        { "charset": "UTF-8" },
+        { "http-equiv": "X-UA-Compatible", "content": "IE=edge" },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1.0"
+        }
+      ],
+      "link": [
+        { "rel": "preconnect", "href": "https://fonts.googleapis.com" },
+        {
+          "rel": "preconnect",
+          "href": "https://fonts.gstatic.com",
+          "crossorigin": "true"
+        },
+        {
+          "rel": "stylesheet",
+          "href": "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+        },
+        { "rel": "stylesheet", "href": "/styles.css" }
+      ],
+      "script": []
+    },
+    "router": {
+      "useHashRouting": false
+    }
+  }
+}
