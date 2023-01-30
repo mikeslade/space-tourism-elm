@@ -78,9 +78,10 @@ view settings route { fromMsg, model, content } =
 
 header : Html mainMsg
 header =
-    div [ class "grid", style "grid-template-columns" "1fr 3fr 4fr" ]
+    div
+        [ class "grid header" ]
         [ logo
-        , hr [ style "width" "100%" ] []
+        , hr [ style "width" "100%", style "border-color" "hsl(var(--clr-white) / 25%)" ] []
         , navigation
         ]
 
@@ -100,9 +101,9 @@ navigation =
     nav []
         [ ul [ class "primary-navigation underline-indicators flex" ]
             [ navigationItem { link = "/", num = "00", label = "Home", active = True }
-            , navigationItem { link = "/destination", num = "00", label = "Destination", active = False }
-            , navigationItem { link = "/crew", num = "00", label = "Crew", active = False }
-            , navigationItem { link = "/technology", num = "00", label = "Technology", active = False }
+            , navigationItem { link = "/destination", num = "01", label = "Destination", active = False }
+            , navigationItem { link = "/crew", num = "02", label = "Crew", active = False }
+            , navigationItem { link = "/technology", num = "03", label = "Technology", active = False }
             ]
         ]
 

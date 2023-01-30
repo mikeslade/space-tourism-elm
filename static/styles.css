@@ -274,7 +274,7 @@ select {
 }
 
 .primary-navigation {
-  --gap: 8rem;
+  --gap: 3rem;
   --underline-gap: 2rem;
   list-style: none;
   padding: 0;
@@ -357,4 +357,17 @@ select {
 
 .circle-indicators > [aria-selected="true"] {
   border-color: hsl(var(--clr-white) / 1);
+}
+
+.header {
+  --gap: 5rem;
+  grid-template-columns: 1fr 6fr 6fr 1fr;
+  align-items: center;
+  margin: 2rem 0 2rem 0;
+  padding: 0 3rem 0 3rem;
+  background-image: linear-gradient(
+    to right,
+    hsl(var(--clr-dark) / 10%),
+    hsl(var(--clr-white) / 10%)
+  );
 }
